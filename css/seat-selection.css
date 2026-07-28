@@ -1,0 +1,330 @@
+/* ===========================
+   PAGE HEADER
+=========================== */
+
+.seat-header{
+
+    margin-top:90px;
+    padding:60px 8%;
+    background:#f5f7fa;
+    text-align:center;
+
+}
+
+.seat-header h1{
+
+    font-size:42px;
+    color:#003366;
+    margin-bottom:10px;
+
+}
+
+.seat-header p{
+
+    color:#666;
+    font-size:18px;
+
+}
+
+
+/* ===========================
+   FLIGHT INFO
+=========================== */
+
+.flight-info{
+
+    padding:40px 8%;
+
+}
+
+.info-card{
+
+    max-width:700px;
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.info-card h2{
+
+    color:#003366;
+    margin-bottom:10px;
+
+}
+
+.info-card p{
+
+    color:#666;
+
+}
+
+
+/* ===========================
+   LEGEND
+=========================== */
+
+.legend{
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+
+}
+
+.legend-item{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+
+}
+
+
+/* ===========================
+   SEAT MAP
+=========================== */
+
+.seat-container{
+
+    display:flex;
+    justify-content:center;
+    padding-bottom:60px;
+
+}
+
+.seat-map{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.row{
+
+    display:flex;
+    align-items:center;
+    margin-bottom:18px;
+
+}
+
+.row span{
+
+    width:30px;
+    font-weight:bold;
+    color:#003366;
+
+}
+
+.aisle{
+
+    width:40px;
+
+}
+
+.seat{
+
+    width:50px;
+    height:50px;
+
+    margin:5px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#28a745;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    user-select:none;
+
+}
+
+.seat:hover{
+
+    transform:scale(1.08);
+
+}
+
+.selected{
+
+    background:#0077ff !important;
+
+}
+
+.occupied{
+
+    background:#dc3545 !important;
+
+    cursor:not-allowed;
+
+}
+
+
+/* ===========================
+   SUMMARY
+=========================== */
+
+.summary{
+
+    text-align:center;
+
+    padding-bottom:80px;
+
+}
+
+.summary h2{
+
+    color:#003366;
+    margin-bottom:30px;
+
+}
+
+#selectedSeat{
+
+    color:#0077ff;
+
+}
+
+#continueBtn{
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:35px;
+
+    background:#0077ff;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#continueBtn:hover{
+
+    background:#0056cc;
+
+}
+
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark .seat-header{
+
+    background:#181818;
+
+}
+
+body.dark .seat-header h1{
+
+    color:white;
+
+}
+
+body.dark .seat-header p{
+
+    color:#cccccc;
+
+}
+
+body.dark .info-card{
+
+    background:#1f1f1f;
+
+}
+
+body.dark .info-card h2{
+
+    color:white;
+
+}
+
+body.dark .info-card p{
+
+    color:#cccccc;
+
+}
+
+body.dark .seat-map{
+
+    background:#1f1f1f;
+
+}
+
+body.dark .row span{
+
+    color:white;
+
+}
+
+body.dark .summary h2{
+
+    color:white;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .seat-map{
+
+        padding:20px;
+
+    }
+
+    .seat{
+
+        width:40px;
+        height:40px;
+        font-size:14px;
+
+    }
+
+    .aisle{
+
+        width:20px;
+
+    }
+
+    .seat-header h1{
+
+        font-size:32px;
+
+    }
+
+}

@@ -1,0 +1,343 @@
+/* ===================================
+        PAGE
+=================================== */
+
+body{
+
+    background:#f5f7fb;
+
+}
+
+
+/* ===================================
+        SUCCESS
+=================================== */
+
+.confirmation-section{
+
+    margin-top:100px;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+.success-icon i{
+
+    font-size:90px;
+
+    color:#28a745;
+
+    animation:pop .7s ease;
+
+}
+
+@keyframes pop{
+
+    0%{
+
+        transform:scale(.2);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.confirmation-section h1{
+
+    margin-top:20px;
+
+    font-size:42px;
+
+    color:#003366;
+
+}
+
+.confirmation-section p{
+
+    margin-top:15px;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+
+/* ===================================
+        TICKET
+=================================== */
+
+.ticket{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+
+/* Header */
+
+.ticket-header{
+
+    background:linear-gradient(135deg,#0077ff,#00b4ff);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.ticket-header h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+.ticket-header p{
+
+    font-size:17px;
+
+}
+
+
+/* Body */
+
+.ticket-body{
+
+    padding:35px;
+
+}
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:15px 0;
+
+    border-bottom:1px dashed #ddd;
+
+}
+
+.row span{
+
+    color:#666;
+
+    font-weight:500;
+
+}
+
+.row strong{
+
+    color:#003366;
+
+}
+
+.paid{
+
+    color:#28a745;
+
+}
+
+
+/* ===================================
+        BUTTONS
+=================================== */
+
+.buttons{
+
+    text-align:center;
+
+    margin:50px 0;
+
+}
+
+.buttons button{
+
+    padding:15px 28px;
+
+    margin:10px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0077ff;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    background:#0056d6;
+
+    transform:translateY(-3px);
+
+}
+
+.buttons i{
+
+    margin-right:8px;
+
+}
+
+
+/* ===================================
+        PRINT
+=================================== */
+
+@media print{
+
+    header{
+
+        display:none;
+
+    }
+
+    .buttons{
+
+        display:none;
+
+    }
+
+    body{
+
+        background:white;
+
+    }
+
+}
+
+
+/* ===================================
+        DARK MODE
+=================================== */
+
+body.dark{
+
+    background:#121212;
+
+}
+
+body.dark .confirmation-section h1{
+
+    color:white;
+
+}
+
+body.dark .confirmation-section p{
+
+    color:#cccccc;
+
+}
+
+body.dark .ticket{
+
+    background:#1e1e1e;
+
+}
+
+body.dark .ticket-body{
+
+    color:white;
+
+}
+
+body.dark .row{
+
+    border-bottom:1px dashed #444;
+
+}
+
+body.dark .row span{
+
+    color:#bbbbbb;
+
+}
+
+body.dark .row strong{
+
+    color:white;
+
+}
+
+body.dark .buttons button{
+
+    background:#0077ff;
+
+}
+
+body.dark .buttons button:hover{
+
+    background:#0056d6;
+
+}
+
+
+/* ===================================
+        MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+    .confirmation-section h1{
+
+        font-size:30px;
+
+    }
+
+    .ticket-header h2{
+
+        font-size:24px;
+
+    }
+
+    .row{
+
+        flex-direction:column;
+
+        gap:8px;
+
+    }
+
+    .buttons button{
+
+        width:90%;
+
+    }
+
+}

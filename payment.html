@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment | Khagan Airlines</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <div class="logo">
+            ✈ খাগান Airlines
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="flights.html">Flights</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="payment-banner">
+
+        <h1>Complete Your Payment</h1>
+
+        <p>
+            Secure payment powered by Khagan Airlines
+        </p>
+
+    </section>
+
+
+    <!-- ================= PROGRESS BAR ================= -->
+
+    <section class="progress-section">
+
+        <div class="step completed">
+
+            <i class="fa-solid fa-plane"></i>
+
+            <span>Flights</span>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step completed">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>Details</span>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step completed">
+
+            <i class="fa-solid fa-couch"></i>
+
+            <span>Seat</span>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step completed">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>Passenger</span>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step active">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <span>Payment</span>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <span>Confirmation</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PAYMENT AREA ================= -->
+
+    <section class="payment-wrapper">
+
+
+        <!-- LEFT SIDE -->
+
+
+        <div class="summary-card">
+
+            <h2>
+                Booking Summary
+            </h2>
+
+            <div class="summary-item">
+
+                <span>Passenger</span>
+
+                <strong id="passengerName">
+                    -
+                </strong>
+
+            </div>
+
+            <div class="summary-item">
+
+                <span>Route</span>
+
+                <strong id="route">
+                    -
+                </strong>
+
+            </div>
+
+            <div class="summary-item">
+
+                <span>Flight</span>
+
+                <strong id="flightNo">
+                    KA101
+                </strong>
+
+            </div>
+
+            <div class="summary-item">
+
+                <span>Seat</span>
+
+                <strong id="seat">
+                    -
+                </strong>
+
+            </div>
+
+            <div class="summary-item">
+
+                <span>Class</span>
+
+                <strong id="travelClass">
+                    -
+                </strong>
+
+            </div>
+
+            <hr>
+
+            <div class="summary-item">
+
+                <span>Total Fare</span>
+
+                <strong id="totalFare">
+                    ৳8,500
+                </strong>
+
+            </div>
+
+            <br>
+
+            <h3>Coupon Code</h3>
+
+            <div class="coupon-box">
+
+                <input
+                    type="text"
+                    id="coupon"
+                    placeholder="Enter Coupon">
+
+                <button
+                    id="applyCoupon">
+
+                    Apply
+
+                </button>
+
+            </div>
+
+            <br>
+
+            <div class="security">
+
+                <p>
+
+                    🔒 SSL Secure Payment
+
+                </p>
+
+                <p>
+
+                    ✔ 100% Safe Transaction
+
+                </p>
+
+                <p>
+
+                    ✔ PCI DSS Compliant
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+
+        <div class="payment-card">
+
+            <h2>
+
+                Select Payment Method
+
+            </h2>
+
+            <div class="payment-options">
+
+
+                <div class="method active"
+                    data-method="card">
+
+                    <i class="fa-solid fa-credit-card"></i>
+
+                    <span>
+
+                        Credit / Debit Card
+
+                    </span>
+
+                </div>
+
+
+                <div class="method"
+                    data-method="bkash">
+
+                    🟣
+
+                    <span>
+
+                        bKash
+
+                    </span>
+
+                </div>
+
+
+                <div class="method"
+                    data-method="nagad">
+
+                    🟠
+
+                    <span>
+
+                        Nagad
+
+                    </span>
+
+                </div>
+
+
+                <div class="method"
+                    data-method="rocket">
+
+                    🔵
+
+                    <span>
+
+                        Rocket
+
+                    </span>
+
+                </div>
+
+
+                <div class="method"
+                    data-method="dbbl">
+
+                    🟢
+
+                    <span>
+
+                        DBBL Nexus
+
+                    </span>
+
+                </div>
+
+
+                <div class="method"
+                    data-method="onecard">
+
+                    🟡
+
+                    <span>
+
+                        University One Card
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dynamic Form -->
+
+            <form
+                id="paymentForm">
+
+                <div id="paymentFields">
+
+                </div>
+
+                <button
+                    class="pay-btn"
+                    type="submit">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    Pay Now
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Processing Popup -->
+
+    <div
+        class="processing"
+        id="processing">
+
+        <div class="loader"></div>
+
+        <h2>
+
+            Processing Payment...
+
+        </h2>
+
+        <p>
+
+            Please wait a moment.
+
+        </p>
+
+    </div>
+
+
+    <script src="js/theme.js"></script>
+
+    <script src="js/payment.js"></script>
+
+</body>
+
+</html>

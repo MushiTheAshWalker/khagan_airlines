@@ -1,0 +1,214 @@
+/* ===========================
+   PAGE TITLE
+=========================== */
+
+.page-title{
+
+    margin-top:90px;
+    padding:60px 8%;
+    text-align:center;
+    background:#f5f7fa;
+
+}
+
+.page-title h1{
+
+    font-size:42px;
+    color:#003366;
+    margin-bottom:10px;
+
+}
+
+.page-title p{
+
+    font-size:18px;
+    color:#666;
+
+}
+
+
+/* ===========================
+   FORM SECTION
+=========================== */
+
+.form-section{
+
+    padding:60px 8%;
+    display:flex;
+    justify-content:center;
+
+}
+
+#passengerForm{
+
+    width:100%;
+    max-width:700px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+
+/* ===========================
+   INPUT GROUP
+=========================== */
+
+.input-group{
+
+    margin-bottom:25px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#003366;
+
+}
+
+.input-group input,
+.input-group select{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus,
+.input-group select:focus{
+
+    border-color:#0077ff;
+
+    box-shadow:0 0 8px rgba(0,119,255,.2);
+
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+#passengerForm button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0077ff;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#passengerForm button:hover{
+
+    background:#0056cc;
+
+}
+
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark .page-title{
+
+    background:#181818;
+
+}
+
+body.dark .page-title h1{
+
+    color:white;
+
+}
+
+body.dark .page-title p{
+
+    color:#cccccc;
+
+}
+
+body.dark #passengerForm{
+
+    background:#1f1f1f;
+
+}
+
+body.dark .input-group label{
+
+    color:white;
+
+}
+
+body.dark .input-group input,
+body.dark .input-group select{
+
+    background:#2a2a2a;
+
+    color:white;
+
+    border:1px solid #444;
+
+}
+
+body.dark .input-group input::placeholder{
+
+    color:#bbbbbb;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .page-title h1{
+
+        font-size:32px;
+
+    }
+
+    #passengerForm{
+
+        padding:25px;
+
+    }
+
+}

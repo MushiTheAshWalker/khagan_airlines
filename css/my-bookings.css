@@ -1,0 +1,515 @@
+/* ===========================
+   HERO
+=========================== */
+
+.booking-hero{
+
+    padding:150px 8% 80px;
+
+    background:#ffffff;
+
+    text-align:center;
+
+}
+
+.booking-hero h1{
+
+    font-size:48px;
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+}
+
+.booking-hero p{
+
+    font-size:18px;
+
+    color:#666;
+
+}
+
+
+/* ===========================
+   SUMMARY
+=========================== */
+
+.summary{
+
+    padding:70px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    background:#f8fbff;
+
+}
+
+.summary-card{
+
+    background:#ffffff;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.summary-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.summary-card h2{
+
+    font-size:42px;
+
+    color:#0077ff;
+
+    margin-bottom:10px;
+
+}
+
+.summary-card p{
+
+    color:#666;
+
+    font-size:17px;
+
+}
+
+
+/* ===========================
+   BOOKINGS
+=========================== */
+
+.bookings-container{
+
+    padding:100px 8%;
+
+    background:#ffffff;
+
+}
+
+.bookings-container h2{
+
+    text-align:center;
+
+    color:#003366;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+}
+
+
+/* ===========================
+   BOOKING CARD
+=========================== */
+
+.booking-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.booking-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+/* ===========================
+   TOP
+=========================== */
+
+.booking-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.booking-top h3{
+
+    color:#003366;
+
+}
+
+
+/* ===========================
+   STATUS
+=========================== */
+
+.status{
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.confirmed{
+
+    background:#28a745;
+
+}
+
+.completed{
+
+    background:#6c757d;
+
+}
+
+
+/* ===========================
+   INFO
+=========================== */
+
+.booking-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:18px;
+
+    margin-bottom:30px;
+
+}
+
+.booking-info p{
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+.booking-info strong{
+
+    color:#003366;
+
+}
+/* ===========================
+   BOOKING BUTTONS
+=========================== */
+
+.booking-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.booking-buttons button{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#0077ff;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.booking-buttons button:hover{
+
+    background:#0056cc;
+
+    transform:translateY(-3px);
+
+}
+
+.booking-buttons .secondary{
+
+    background:#ffffff;
+
+    color:#0077ff;
+
+    border:2px solid #0077ff;
+
+}
+
+.booking-buttons .secondary:hover{
+
+    background:#0077ff;
+
+    color:#ffffff;
+
+}
+
+
+/* ===========================
+   CTA SECTION
+=========================== */
+
+.booking-cta{
+
+    padding:90px 8%;
+
+    background:#f8fbff;
+
+    text-align:center;
+
+}
+
+.booking-cta h2{
+
+    font-size:40px;
+
+    color:#003366;
+
+    margin-bottom:20px;
+
+}
+
+.booking-cta p{
+
+    color:#666;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+.booking-cta button{
+
+    padding:16px 40px;
+
+    background:#0077ff;
+
+    color:white;
+
+    border:none;
+
+    border-radius:40px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.booking-cta button:hover{
+
+    background:#0056cc;
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .booking-hero h1{
+
+        font-size:34px;
+
+    }
+
+    .booking-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .booking-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .booking-buttons button{
+
+        width:100%;
+
+    }
+
+    .booking-cta h2{
+
+        font-size:30px;
+
+    }
+
+}
+
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark .booking-hero{
+
+    background:#121212;
+
+}
+
+body.dark .booking-hero h1{
+
+    color:#ffffff;
+
+}
+
+body.dark .booking-hero p{
+
+    color:#cccccc;
+
+}
+
+body.dark .summary{
+
+    background:#181818;
+
+}
+
+body.dark .summary-card{
+
+    background:#1e1e1e;
+
+}
+
+body.dark .summary-card p{
+
+    color:#cccccc;
+
+}
+
+body.dark .bookings-container{
+
+    background:#121212;
+
+}
+
+body.dark .bookings-container h2{
+
+    color:#ffffff;
+
+}
+
+body.dark .booking-card{
+
+    background:#1e1e1e;
+
+}
+
+body.dark .booking-top h3{
+
+    color:#ffffff;
+
+}
+
+body.dark .booking-info p{
+
+    color:#cccccc;
+
+}
+
+body.dark .booking-info strong{
+
+    color:#ffffff;
+
+}
+
+body.dark .booking-cta{
+
+    background:#181818;
+
+}
+
+body.dark .booking-cta h2{
+
+    color:#ffffff;
+
+}
+
+body.dark .booking-cta p{
+
+    color:#cccccc;
+
+}
+
+body.dark .booking-buttons .secondary{
+
+    background:transparent;
+
+    color:#4da3ff;
+
+    border:2px solid #4da3ff;
+
+}
+
+body.dark .booking-buttons .secondary:hover{
+
+    background:#4da3ff;
+
+    color:#ffffff;
+
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkyBook Airlines</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <div class="logo">
+            ✈ SkyBook Airlines
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="flights.html">Flights</a></li>
+
+                <li><a href="destinations.html">Destinations</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </div>
+
+        <div class="nav-buttons">
+
+            <a href="login.html" class="login-btn">Login</a>
+
+            <a href="register.html" class="register-btn">Register</a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                Fly Beyond The Sky
+            </h1>
+
+            <p>
+                Book Domestic & International Flights
+                at the Best Prices.
+            </p>
+
+            <button class="hero-btn" id="heroSearchBtn">
+                Search Flights
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <h2>Search Flights</h2>
+
+            <form id="searchForm">
+
+                <input
+                    type="text"
+                    id="from"
+                    placeholder="From">
+
+                <input
+                    type="text"
+                    id="to"
+                    placeholder="To">
+
+                <input
+                    type="date"
+                    id="date">
+
+                <select id="travelClass">
+
+                    <option value="Economy">Economy</option>
+
+                    <option value="Business">Business</option>
+
+                    <option value="First Class">First Class</option>
+
+                </select>
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <h2>Why Choose Us</h2>
+
+        <div class="feature-container">
+
+            <div class="card">
+
+                <i class="fa-solid fa-plane"></i>
+
+                <h3>Worldwide Flights</h3>
+
+                <p>
+                    150+ countries with affordable prices.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>On Time</h3>
+
+                <p>
+                    We value your time and comfort.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>Safe Journey</h3>
+
+                <p>
+                    Your safety is always our first priority.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>24/7 Support</h3>
+
+                <p>
+                    We are available anytime you need help.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= DESTINATIONS ================= -->
+
+    <section class="destinations">
+
+        <h2>Popular Destinations</h2>
+
+        <div class="destination-container">
+
+            <div class="destination-card">
+
+                <img src="images/dubai.jpg" alt="Dubai">
+
+                <h3>Dubai</h3>
+
+                <p>Starting From $250</p>
+
+                <button class="book-btn"
+
+data-destination="Dubai">
+
+Book Flight
+
+</button>
+
+            </div>
+
+            <div class="destination-card">
+
+                <img src="images/london.jpg" alt="London">
+
+                <h3>London</h3>
+
+                <p>Starting From $700</p>
+
+                <button class="book-btn"
+
+data-destination="London">
+
+Book Flight
+
+</button>
+
+            </div>
+
+            <div class="destination-card">
+
+                <img src="images/singapore.jpg" alt="Singapore">
+
+                <h3>Singapore</h3>
+
+                <p>Starting From $320</p>
+
+                <button class="book-btn"
+
+data-destination="Singapore">
+
+Book Flight
+
+</button>
+
+            </div>
+
+        </div>
+    <div class="view-all">
+
+    <a href="destinations.html" class="view-btn">
+
+        View All Destinations
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+
+</div>
+
+
+    </section>
+
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services">
+
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <h3>Flight Booking</h3>
+
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-chair"></i>
+
+                <h3>Seat Selection</h3>
+
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <h3>Secure Payment</h3>
+
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-file"></i>
+
+                <h3>E-Ticket</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= TESTIMONIAL ================= -->
+
+    <section class="testimonial">
+
+        <h2>What Our Customers Say</h2>
+
+        <div class="testimonial-card">
+
+            <p>
+
+                "The booking process was extremely easy
+                and the support team was very helpful.
+                Highly recommended."
+
+            </p>
+
+            <h4>- John Smith</h4>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <h3>SkyBook Airlines</h3>
+
+                <p>
+                    Making your journey safe,
+                    comfortable and memorable.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <p>Home</p>
+
+                <p>Flights</p>
+
+                <p>Contact</p>
+
+            </div>
+
+            <div>
+
+                <h3>Follow Us</h3>
+
+                <i class="fa-brands fa-facebook"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-linkedin"></i>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 SkyBook Airlines. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JS -->
+
+    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+
+</html>

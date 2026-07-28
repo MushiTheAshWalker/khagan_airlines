@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seat Selection | Khagan Airlines</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/seat-selection.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <div class="logo">
+            ✈ খাগান Airlines
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html">Flights</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </div>
+
+    </header>
+
+    <!-- ================= TITLE ================= -->
+
+    <section class="seat-header">
+
+        <h1>Select Your Seat</h1>
+
+        <p>Choose your preferred seat before continuing.</p>
+
+    </section>
+
+    <!-- ================= FLIGHT INFO ================= -->
+
+    <section class="flight-info">
+
+        <div class="info-card">
+
+            <h2 id="route">
+                Dhaka → Cox's Bazar
+            </h2>
+
+            <p>
+                Flight: KA101 | Boeing 737
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= LEGEND ================= -->
+
+    <section class="legend">
+
+        <div class="legend-item">
+
+            <div class="seat available"></div>
+
+            Available
+
+        </div>
+
+        <div class="legend-item">
+
+            <div class="seat selected"></div>
+
+            Selected
+
+        </div>
+
+        <div class="legend-item">
+
+            <div class="seat occupied"></div>
+
+            Booked
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEAT MAP ================= -->
+
+    <section class="seat-container">
+
+        <div class="seat-map">
+
+            <div class="row">
+                <span>A</span>
+
+                <div class="seat">A1</div>
+                <div class="seat">A2</div>
+
+                <div class="aisle"></div>
+
+                <div class="seat occupied">A3</div>
+                <div class="seat">A4</div>
+            </div>
+
+            <div class="row">
+                <span>B</span>
+
+                <div class="seat">B1</div>
+                <div class="seat">B2</div>
+
+                <div class="aisle"></div>
+
+                <div class="seat">B3</div>
+                <div class="seat occupied">B4</div>
+            </div>
+
+            <div class="row">
+                <span>C</span>
+
+                <div class="seat">C1</div>
+                <div class="seat occupied">C2</div>
+
+                <div class="aisle"></div>
+
+                <div class="seat">C3</div>
+                <div class="seat">C4</div>
+            </div>
+
+            <div class="row">
+                <span>D</span>
+
+                <div class="seat">D1</div>
+                <div class="seat">D2</div>
+
+                <div class="aisle"></div>
+
+                <div class="seat">D3</div>
+                <div class="seat">D4</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SUMMARY ================= -->
+
+    <section class="summary">
+
+        <h2>
+
+            Selected Seat :
+            <span id="selectedSeat">
+                None
+            </span>
+
+        </h2>
+
+        <button id="continueBtn">
+
+            Continue
+
+        </button>
+
+    </section>
+
+    <!-- JS -->
+
+    <script src="js/theme.js"></script>
+    <script src="js/seat-selection.js"></script>
+
+</body>
+
+</html>

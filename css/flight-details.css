@@ -1,0 +1,286 @@
+/* ===========================
+   BANNER
+=========================== */
+
+.banner{
+
+    margin-top:90px;
+    padding:70px 8%;
+    background:#f5f7fa;
+    text-align:center;
+
+}
+
+.banner h1{
+
+    font-size:42px;
+    color:#003366;
+    margin-bottom:10px;
+
+}
+
+.banner p{
+
+    color:#666;
+    font-size:18px;
+
+}
+
+
+/* ===========================
+   FLIGHT DETAILS
+=========================== */
+
+.details{
+
+    padding:60px 8%;
+
+}
+
+.flight-card{
+
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+
+}
+
+.left{
+
+    flex:1;
+    text-align:center;
+
+}
+
+.left img{
+
+    width:100%;
+    max-width:320px;
+
+}
+
+.right{
+
+    flex:2;
+
+}
+
+.right h2{
+
+    color:#003366;
+    margin-bottom:15px;
+
+}
+
+.right h3{
+
+    color:#0077ff;
+    margin-bottom:25px;
+
+}
+
+.right p{
+
+    margin-bottom:15px;
+    font-size:17px;
+    color:#555;
+
+}
+
+.right i{
+
+    width:28px;
+    color:#0077ff;
+
+}
+
+
+/* ===========================
+   PRICE SECTION
+=========================== */
+
+.price-section{
+
+    padding:20px 8% 80px;
+    text-align:center;
+
+}
+
+.price-section h2{
+
+    font-size:36px;
+    color:#003366;
+    margin-bottom:40px;
+
+}
+
+.price-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    margin-bottom:40px;
+
+}
+
+.price-card{
+
+    background:white;
+    border-radius:18px;
+    padding:35px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.price-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.price-card h3{
+
+    color:#003366;
+    margin-bottom:15px;
+
+}
+
+.price-card h1{
+
+    color:#0077ff;
+    font-size:42px;
+
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+#continueBtn{
+
+    padding:16px 45px;
+
+    border:none;
+    border-radius:40px;
+
+    background:#0077ff;
+
+    color:white;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#continueBtn:hover{
+
+    background:#0056cc;
+    transform:translateY(-3px);
+
+}
+
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark .banner{
+
+    background:#181818;
+
+}
+
+body.dark .banner h1{
+
+    color:white;
+
+}
+
+body.dark .banner p{
+
+    color:#cccccc;
+
+}
+
+body.dark .flight-card{
+
+    background:#1f1f1f;
+
+}
+
+body.dark .right h2,
+body.dark .right h3{
+
+    color:white;
+
+}
+
+body.dark .right p{
+
+    color:#dddddd;
+
+}
+
+body.dark .price-card{
+
+    background:#1f1f1f;
+
+}
+
+body.dark .price-card h3{
+
+    color:white;
+
+}
+
+body.dark .price-card h1{
+
+    color:#4da3ff;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .flight-card{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .banner h1{
+
+        font-size:32px;
+
+    }
+
+    .price-section h2{
+
+        font-size:28px;
+
+    }
+
+}

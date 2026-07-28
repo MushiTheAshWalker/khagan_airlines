@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Khagan Airlines</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        ✈ Khagan Airlines Admin
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#" class="active">Dashboard</a></li>
+
+            <li><a href="#">Flights</a></li>
+
+            <li><a href="#">Bookings</a></li>
+
+            <li><a href="#">Users</a></li>
+
+            <li><a href="#">Payments</a></li>
+
+            <li><a href="index.html">Website</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="theme-toggle">
+
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="dashboard-hero">
+
+    <h1>Admin Dashboard</h1>
+
+    <p>
+
+        Welcome back, Administrator.
+
+    </p>
+
+</section>
+
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-users"></i>
+
+        <h2>1,245</h2>
+
+        <p>Total Users</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-plane"></i>
+
+        <h2>52</h2>
+
+        <p>Total Flights</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-ticket"></i>
+
+        <h2>860</h2>
+
+        <p>Total Bookings</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-dollar-sign"></i>
+
+        <h2>$245,600</h2>
+
+        <p>Total Revenue</p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= RECENT BOOKINGS ================= -->
+
+<section class="dashboard-table">
+
+    <h2>Recent Bookings</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Booking ID</th>
+
+                <th>Passenger</th>
+
+                <th>Flight</th>
+
+                <th>Seat</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>KHG10251</td>
+
+                <td>Golam Mushfiq</td>
+
+                <td>BG221</td>
+
+                <td>A12</td>
+
+                <td><span class="confirmed">Confirmed</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>KHG10260</td>
+
+                <td>Mainul Hasan</td>
+
+                <td>EK583</td>
+
+                <td>C09</td>
+
+                <td><span class="confirmed">Confirmed</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>KHG10273</td>
+
+                <td>Ashraful Islam</td>
+
+                <td>SQ401</td>
+
+                <td>D15</td>
+
+                <td><span class="completed">Completed</span></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+<!-- ================= RECENT USERS ================= -->
+
+<section class="dashboard-table">
+
+    <h2>Recent Users</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>User ID</th>
+
+                <th>Name</th>
+
+                <th>Email</th>
+
+                <th>Joined</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>U001</td>
+
+                <td>Golam Mushfiq</td>
+
+                <td>mushfiq@gmail.com</td>
+
+                <td>20 Jul 2026</td>
+
+            </tr>
+
+            <tr>
+
+                <td>U002</td>
+
+                <td>Mainul Hasan</td>
+
+                <td>mainul@gmail.com</td>
+
+                <td>22 Jul 2026</td>
+
+            </tr>
+
+            <tr>
+
+                <td>U003</td>
+
+                <td>Ashraful Islam</td>
+
+                <td>ashraful@gmail.com</td>
+
+                <td>24 Jul 2026</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+
+<!-- ================= QUICK ACTIONS ================= -->
+
+<section class="quick-actions">
+
+    <h2>Quick Actions</h2>
+
+    <div class="action-container">
+
+        <div class="action-card">
+
+            <i class="fa-solid fa-plane-departure"></i>
+
+            <h3>Add Flight</h3>
+
+            <p>Create a new flight schedule.</p>
+
+            <button>Add Flight</button>
+
+        </div>
+
+        <div class="action-card">
+
+            <i class="fa-solid fa-plane"></i>
+
+            <h3>Manage Flights</h3>
+
+            <p>Update or remove flights.</p>
+
+            <button>Manage</button>
+
+        </div>
+
+        <div class="action-card">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h3>Manage Users</h3>
+
+            <p>View and manage passengers.</p>
+
+            <button>Users</button>
+
+        </div>
+
+        <div class="action-card">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <h3>Payments</h3>
+
+            <p>View payment history.</p>
+
+            <button>Payments</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>Khagan Airlines Admin</h3>
+
+            <p>
+
+                Airline Reservation Management System.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Admin Panel</h3>
+
+            <p>Flights</p>
+
+            <p>Bookings</p>
+
+            <p>Users</p>
+
+            <p>Payments</p>
+
+        </div>
+
+        <div>
+
+            <h3>Version</h3>
+
+            <p>Version 1.0</p>
+
+            <p>Node.js + MySQL Ready</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= JS ================= -->
+
+<script src="js/theme.js"></script>
+
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+
+</html>
